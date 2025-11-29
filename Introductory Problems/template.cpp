@@ -26,31 +26,11 @@ const double PI = acos(-1.0);
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-    long long n;
-    cin>>n;
-    if((n*(n+1)/2) %2 != 0){
-        cout<<"NO"<<endl;
-        return 0;
+
+    int t;
+    cin >> t;
+    while (t--) {
+        // Solve each test case here
     }
-    else cout<<"YES"<<endl;
-    set<ll> s1,s2;
-    ll s = n*(n+1)/4;
-    for(ll i = n ; i>=1 ; i--){
-        if(i<=s){
-            s1.insert(i);
-            s-=i;
-        }
-        else s2.insert(i);
-    }
-    cout<<s1.size()<<endl;
-    for(auto it:s1){
-        cout<<it<<" ";
-    }
-    cout<<endl;
-    cout<<s2.size()<<endl;
-    for(auto it: s2){
-        cout<<it<<" ";
-    }
-    cout<<endl;
     return 0;
 }
